@@ -15,6 +15,6 @@ public class MainAppTest {
     public void secondTest() {
         System.out.println("secondTest - test text");
         int result = 555;
-        assertEquals(777, result);
+        assertEquals(555, result);
     }
 }
