@@ -31,7 +31,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Run build with Gradle Wrapper
-        run: ./gradlew build
+        run: ./gradlew build --stacktrace
 
   build-without-tests:
 
@@ -47,7 +47,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Run build with Gradle Wrapper
-        run: ./gradlew -x test build
+        run: ./gradlew -x test build --stacktrace
 
   run-junit-tests:
 
@@ -63,4 +63,4 @@ jobs:
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
       - name: Run build with Gradle Wrapper
-        run: ./gradlew test
+        run: ./gradlew test --stacktrace
